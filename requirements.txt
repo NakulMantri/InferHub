@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+greenlet
+redis
+openai
+huggingface_hub
+prometheus-client
+pydantic-settings
+python-dotenv
