@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    app_name: str = "LLM Inference Gateway"
+    app_name: str = "InferHub"
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/gateway"
     redis_url: str = "redis://localhost:6379/0"
     

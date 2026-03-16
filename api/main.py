@@ -8,7 +8,7 @@ from cache.redis_client import redis_client
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    logger.info("Starting up LLM Inference Gateway")
+    logger.info("Starting up InferHub")
     await init_db()
     await redis_client.connect()
     yield
@@ -17,7 +17,7 @@ async def lifespan(app: FastAPI):
     await redis_client.disconnect()
 
 app = FastAPI(
-    title="LLM Inference Gateway",
+    title="InferHub",
     description="Unified API gateway for multiple LLMs with caching and metrics",
     version="1.0.0",
     lifespan=lifespan

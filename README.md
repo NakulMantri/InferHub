@@ -1,4 +1,4 @@
-# LLM Inference Gateway
+# InferHub
 
 A production-style backend system that exposes unified REST APIs to serve multiple Large Language Models (LLMs). The system routes requests to different models, supports concurrent inference using FastAPI, caches responses with Redis, and logs observability metrics to PostgreSQL.
 
@@ -23,7 +23,7 @@ A production-style backend system that exposes unified REST APIs to serve multip
 ## Project Structure
 
 ```
-llm-inference-gateway/
+InferHub/
 ├── api/
 │   ├── main.py        - FastAPI App Entrypoint
 │   └── routes.py      - HTTP Endpoint Handlers
