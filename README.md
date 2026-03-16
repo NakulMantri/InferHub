@@ -12,8 +12,6 @@ A production-style backend system that exposes unified REST APIs to serve multip
 - **Observability**: Prometheus metrics are available at `/metrics` tracking request latency, request count globally, and cache hit/miss rates.
 
 ## Architecture
-
-![Architecture](https://via.placeholder.com/800x400.png?text=Architecture+Diagram)
 * FastAPI routes the incoming request to the Model Router.
 * Before generating, it queries the Redis Cache.
 * If a cache miss occurs, the Model Router dispatches the request to the correct worker (OpenAI or HF).
